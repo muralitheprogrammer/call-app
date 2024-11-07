@@ -2,13 +2,6 @@
 
 A real-time calling application that uses Vue.js for the frontend and .NET Web API for the backend. The app allows the user to receive and dial call to any number..
 
-## Features
-- **Real-Time Notifications**: Uses SignalR for live updates.
-- **Notification Bell Icon**: Displays the count of unread notifications.
-- **Toggle Notification Panel**: Easily show or hide the list of notifications.
-- **Clear Notifications**: Option to clear individual notifications or all at once.
-- **Visual Indicator**: Highlights when new notifications arrive.
-
 ## Technologies Used
 ### Frontend
 - **Vue.js**: A progressive JavaScript framework for building user interfaces.
