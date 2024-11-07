@@ -15,7 +15,7 @@ import { HubConnectionBuilder } from '@microsoft/signalr';
 import DialPad from './DialPad.vue';
 import { useToast } from "vue-toastification";
 
-axios.defaults.baseURL = 'https://localhost:7093/api'; // Your .NET backend API base URL
+axios.defaults.baseURL = 'https://fcahzlvqwq7nzkf6ropo3igjxq0hkeph.lambda-url.eu-north-1.on.aws/api'; // Your .NET backend API base URL
 
 export default {
   components: {
@@ -97,7 +97,7 @@ export default {
     },
     initializeSignalR() {
       this.hubConnection = new HubConnectionBuilder()
-        .withUrl('https://localhost:7093/callHub')
+        .withUrl('https://fcahzlvqwq7nzkf6ropo3igjxq0hkeph.lambda-url.eu-north-1.on.aws/callHub')
         .build();
 
       this.hubConnection.on('IncomingCall', (message) => {
